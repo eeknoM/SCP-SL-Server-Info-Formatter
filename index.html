@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCP:SL Server-Info Formatter</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Icon Link -->
+    <link rel="icon" href="ico.png" type="image/png">
+    
+</head>
+<body>
+    <div id="container">
+        <h1>SCP:SL Server-Info Formatter</h1>
+        <textarea id="inputText" rows="10" placeholder="Enter your text here..."></textarea><br>
+        
+        <!-- Formatting Buttons -->
+        <button onclick="applyFormatting('<b>', '</b>')">Bold</button>
+        <button onclick="applyFormatting('<i>', '</i>')">Italic</button>
+        <button onclick="applyFormatting('<u>', '</u>')">Underline</button>
+        
+        <!-- Custom Color and Size -->
+        <input type="text" id="customColor" placeholder="Enter Color (e.g., blue)" />
+        <button onclick="applyCustomColor()">Apply Color</button>
+        <input type="text" id="customSize" placeholder="Enter Size (e.g., 30)" />
+        <button onclick="applyCustomSize()">Apply Size</button>
+        
+        <!-- Gradient Feature -->
+        <input type="text" id="gradientStart" placeholder="Start Color (e.g., #ff0000)" />
+        <input type="text" id="gradientMiddle" placeholder="Middle Color (optional, e.g., #00ff00)" />
+        <input type="text" id="gradientEnd" placeholder="End Color (e.g., #0000ff)" />
+        <button onclick="applyGradient()">Apply Gradient</button>
+        
+        <!-- Link Button -->
+        <input type="text" id="linkURL" placeholder="Enter URL (e.g., http://example.com)" />
+        <button onclick="applyLink()">Insert Link</button>
+        
+        <!-- Error Display -->
+        <div id="error"></div>
+
+        <!-- Formatted Text Display -->
+        <div id="formattedText"></div>
+
+        <!-- Preview Display -->
+        <h2>Preview</h2>
+        <div id="Preview"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
