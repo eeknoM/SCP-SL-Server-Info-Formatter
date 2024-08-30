@@ -4,9 +4,9 @@ A web-based tool for formatting text with custom styles, designed specifically f
 
 ## Features
 
-- **Text Formatting**: Apply bold, italic, and underline styles.
+- **Text Formatting**: Apply bold, italic, and underline.
 - **Custom Color & Size**: Set text color and size.
-- **Gradient**: Apply linear gradients to text.
+- **Gradient**: Apply linear gradients to text. (Start, Middle, End)
 - **Hyperlinks**: Insert clickable links.
 - **Preview**: See a live preview of the formatted text.
 
