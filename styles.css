@@ -26,6 +26,7 @@ body {
     width: 90%;
     max-width: 800px;
     margin-top: 50px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 h1 {
@@ -77,6 +78,8 @@ button:hover {
     max-width: 600px;
     color: #ffffff; /* White text for output areas */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin-left: auto;
+    margin-right: auto; /* Center horizontally */
 }
 
 #error {
