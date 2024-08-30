@@ -23,13 +23,18 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    width: 80%;
+    width: 90%;
     max-width: 800px;
     margin-top: 50px;
 }
 
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
 textarea, input[type="text"] {
-    width: 80%;
+    width: 90%;
     max-width: 600px;
     margin: 10px auto;
     border: 1px solid #444;
@@ -40,6 +45,7 @@ textarea, input[type="text"] {
     display: block;
     background-color: #1e1e1e; /* Dark input background */
     color: #ffffff; /* White text for inputs */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 button {
@@ -52,32 +58,35 @@ button {
     cursor: pointer;
     font-size: 14px;
     display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 button:hover {
     background-color: #f0f0f0;
+    color: #000000;
 }
 
 #formattedText, #Preview {
     margin-top: 20px;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #444;
     background-color: #1e1e1e; /* Dark grey background for output areas */
     white-space: pre-wrap;
     border-radius: 5px;
-    width: 80%;
+    width: 90%;
     max-width: 600px;
-    margin: 20px auto;
     color: #ffffff; /* White text for output areas */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 #error {
     color: red;
     font-weight: bold;
+    margin: 10px 0;
 }
 
 a {
-    color: inherit; /* Use the inherited color of the surrounding text */
+    color: #1e90ff; /* Link color */
     text-decoration: none; /* Remove underline */
 }
 
