@@ -83,15 +83,23 @@ function applyLink() {
 
 function updateFormattedText() {
     const formattedText = document.getElementById('inputText').value;
+    console.log("Formatted Text:", formattedText); // Debugging line
     document.getElementById('formattedText').innerText = formattedText;
     updatePreview(formattedText);
     clearError();
 }
 
 function updatePreview(text) {
+    console.log("Updating Preview with text:", text); // Debugging line
     const Preview = document.getElementById('Preview');
+    if (!Preview) {
+        console.error("Preview element not found.");
+        return;
+    }
+
     let previewText = text;
 
+    // Replace tags with HTML equivalents
     previewText = previewText.replace(/<b>(.*?)<\/b>/g, '<strong>$1</strong>');
     previewText = previewText.replace(/<i>(.*?)<\/i>/g, '<em>$1</em>');
     previewText = previewText.replace(/<u>(.*?)<\/u>/g, '<span style="text-decoration: underline;">$1</span>');
