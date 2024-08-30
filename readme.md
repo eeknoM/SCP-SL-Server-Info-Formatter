@@ -14,12 +14,6 @@ A web-based tool for formatting text with custom styles, designed specifically f
 
 You can use the website [here](https://eeknom.github.io/SCP-SL-Server-Info-Formatter)
 
-## Files
-
-- **`index.html`**: The main HTML file that contains the structure of the web page.
-- **`script.js`**: JavaScript file that handles text formatting, preview updates, and error handling.
-- **`styles.css`**: CSS file for styling the web page.
-
 ## Usage
 
 1. Enter your text into the textarea.
