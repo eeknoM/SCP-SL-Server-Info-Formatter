@@ -84,12 +84,12 @@ function applyLink() {
 function updateFormattedText() {
     const formattedText = document.getElementById('inputText').value;
     document.getElementById('formattedText').innerText = formattedText;
-    updateUnityPreview(formattedText);
+    updatePreview(formattedText);
     clearError();
 }
 
-function updateUnityPreview(text) {
-    const unityPreview = document.getElementById('unityPreview');
+function updatePreview(text) {
+    const Preview = document.getElementById('Preview');
     let previewText = text;
 
     previewText = previewText.replace(/<b>(.*?)<\/b>/g, '<strong>$1</strong>');
@@ -108,7 +108,7 @@ function updateUnityPreview(text) {
 
     previewText = previewText.replace(/<a href="(.*?)">(.*?)<\/a>/g, '<a href="$1">$2</a>');
 
-    unityPreview.innerHTML = previewText;
+    Preview.innerHTML = previewText;
 }
 
 function showError(message) {
