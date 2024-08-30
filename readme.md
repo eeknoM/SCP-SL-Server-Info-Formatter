@@ -27,17 +27,3 @@ You can use the website here [here](URL_TO_DEMO).
 3. Enter custom color or size values if needed.
 4. Apply gradients and insert links as desired.
 5. The formatted text will be displayed below the input area, and a live preview will be updated in real-time.
-
-## Contributing
-
-Feel free to open issues or submit pull requests if you have suggestions for improvements or find any bugs.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-If you have any questions or need further assistance, you can reach out to me at [your-email@example.com](mailto:your-email@example.com).
-
----
