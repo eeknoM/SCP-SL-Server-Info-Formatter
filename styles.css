@@ -58,7 +58,7 @@ button:hover {
     background-color: #f0f0f0;
 }
 
-#formattedText, #unityPreview {
+#formattedText, #Preview {
     margin-top: 20px;
     padding: 10px;
     border: 1px solid #444;
