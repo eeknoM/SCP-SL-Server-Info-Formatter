@@ -1,6 +1,6 @@
 # SCP:SL Server-Info Formatter
 
-A web-based tool for formatting text with custom styles, designed specifically for SCP:SL server information. This tool allows users to apply various formatting options to text, preview the results, and generate formatted output for use in Unity.
+A web-based tool for formatting text with custom styles, designed specifically for SCP:SL server information. This tool allows you to apply various formatting options to text, preview the results, and generate formatted output for use in Unity.
 
 ## Features
 
