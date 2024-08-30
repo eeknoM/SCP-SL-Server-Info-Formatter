@@ -91,6 +91,7 @@ function updateFormattedText() {
 
 function updatePreview(text) {
     console.log("Updating Preview with text:", text); // Debugging line
+
     const Preview = document.getElementById('Preview');
     if (!Preview) {
         console.error("Preview element not found.");
@@ -99,22 +100,34 @@ function updatePreview(text) {
 
     let previewText = text;
 
-    // Replace tags with HTML equivalents
+    // Debug each replacement step
     previewText = previewText.replace(/<b>(.*?)<\/b>/g, '<strong>$1</strong>');
+    console.log("After bold replacement:", previewText);
+
     previewText = previewText.replace(/<i>(.*?)<\/i>/g, '<em>$1</em>');
+    console.log("After italic replacement:", previewText);
+
     previewText = previewText.replace(/<u>(.*?)<\/u>/g, '<span style="text-decoration: underline;">$1</span>');
+    console.log("After underline replacement:", previewText);
+
     previewText = previewText.replace(/<color=(.*?)>(.*?)<\/color>/g, '<span style="color:$1;">$2</span>');
+    console.log("After color replacement:", previewText);
+
     previewText = previewText.replace(/<size=(.*?)>(.*?)<\/size>/g, '<span style="font-size:$1px;">$2</span>');
+    console.log("After size replacement:", previewText);
 
     previewText = previewText.replace(/<gradient start="(.*?)" middle="(.*?)" end="(.*?)">(.*?)<\/gradient>/g, function(_, start, middle, end, content) {
         return `<span style="background: linear-gradient(to right, ${start}, ${middle}, ${end}); -webkit-background-clip: text; color: transparent;">${content}</span>`;
     });
+    console.log("After gradient replacement (3 colors):", previewText);
 
     previewText = previewText.replace(/<gradient start="(.*?)" end="(.*?)">(.*?)<\/gradient>/g, function(_, start, end, content) {
         return `<span style="background: linear-gradient(to right, ${start}, ${end}); -webkit-background-clip: text; color: transparent;">${content}</span>`;
     });
+    console.log("After gradient replacement (2 colors):", previewText);
 
     previewText = previewText.replace(/<a href="(.*?)">(.*?)<\/a>/g, '<a href="$1">$2</a>');
+    console.log("After link replacement:", previewText);
 
     Preview.innerHTML = previewText;
 }
