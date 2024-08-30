@@ -12,7 +12,7 @@ A web-based tool for formatting text with custom styles, designed specifically f
 
 ## Website
 
-You can use the website here [here](URL_TO_DEMO).
+You can use the website [here](https://eeknom.github.io/SCP-SL-Server-Info-Formatter)
 
 ## Files
 
