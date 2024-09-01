@@ -9,6 +9,7 @@ body {
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
     color: #ffffff; /* Text color for dark mode */
+    box-sizing: border-box; /* Include padding and border in body's total width and height */
 }
 
 @keyframes gradientAnimation {
@@ -25,8 +26,8 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     width: 90%;
     max-width: 800px;
-    margin-top: 50px;
     box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: auto; /* Center horizontally and vertically */
 }
 
 h1 {
