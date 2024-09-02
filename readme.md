@@ -7,7 +7,7 @@ A web-based tool for formatting text with custom styles, designed specifically f
 - **Text Formatting**: Apply bold, italic, and underline.
 - **Allignment**: Set the allignment to Left, Right and Center. (Please note ths may not work)
 - **Custom Color & Size**: Set text color and size.
-- **Gradient**: Apply linear gradients to text. (Start, Middle, End)
+- **Gradient**: Apply linear gradients to text. (Start, Middle, End) (Please note this may also not work)
 - **Hyperlinks**: Insert clickable links.
 - **Preview**: See a live preview of the formatted text.
 
