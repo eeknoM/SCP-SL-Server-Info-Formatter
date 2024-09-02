@@ -81,6 +81,7 @@ button:hover {
     box-sizing: border-box; /* Include padding and border in element's total width and height */
     margin-left: auto;
     margin-right: auto; /* Center horizontally */
+    text-align: left; /*Allign text to the left*/
 }
 
 #error {
