@@ -129,6 +129,16 @@ function updatePreview(text) {
     previewText = previewText.replace(/<a href="(.*?)">(.*?)<\/a>/g, '<a href="$1">$2</a>');
     console.log("After link replacement:", previewText);
 
+    // Align replacements
+    previewText = previewText.replace(/<align=left>(.*?)<\/align>/g, '<div style="text-align: left;">$1</div>');
+    console.log("After align left replacement:", previewText);
+
+    previewText = previewText.replace(/<align=center>(.*?)<\/align>/g, '<div style="text-align: center;">$1</div>');
+    console.log("After align center replacement:", previewText);
+
+    previewText = previewText.replace(/<align=right>(.*?)<\/align>/g, '<div style="text-align: right;">$1</div>');
+    console.log("After align right replacement:", previewText);
+
     Preview.innerHTML = previewText;
 }
 
